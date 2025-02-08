@@ -32,3 +32,38 @@ To open a window where you'll see all the commits that were made:
      gitk&
      
                     
+Rewerting the changes
+
+Git workflow:
+
+Working Directory:
+
+git checkout -- file.txt
+This command discards changes you've made to file.txt in your working directory and reverts it to the version in the staging area (or the last commit if not staged). In the diagram, it visually represents moving changes out of the FILE SYSTEM.
+
+git checkout . 
+This command discards all local changes in your working directory and reverts them to the state in the staging area (or last commit). It similarly moves changes out of the FILE SYSTEM.
+
+git clean -xdf
+This command removes untracked files and directories from your working directory (files that are not under Git's version control). It cleans up your working directory, removing elements not tracked in Git.
+
+
+Staging area (Index):
+
+git reset file.txt 
+This command unstages file.txt. It removes file.txt from the staging area, but it does not discard changes you've made in your working directory to file.txt. 
+
+
+Local branch:
+
+git reset HEAD^^ (HEAD~2) 
+This command moves the current branch's HEAD pointer (and branch pointer) back by two commits. HEAD^^ and HEAD~2 are equivalent ways to reference two commits before the current HEAD. This effectively rewrites the commit history locally by removing the last two commits from the branch. 
+
+git commit --amend -m "commit message" 
+This command amends the last commit. It allows you to modify the previous commit's message or even stage changes and incorporate them into the last commit, effectively rewriting the last commit. This also changes the COMMIT history.
+
+
+Remote repository:
+
+git revert <sha1> 
+This command creates a new commit that reverts the changes introduced by the commit specified by <sha1>. It does not rewrite history but instead adds a new commit that undoes a previous one. The diagram suggests it affects the REMOTE REPOSITORY by creating an operation to undo changes from it.
