@@ -7,7 +7,7 @@ You can download Git here: [Git SCM Downloads](http://git-scm.com/downloads) and
 ### Generating a Pair of SSH Keys
 
 ```sh
-ssh-keygen -t rsa -C "vitali_shulha@epam.com"
+ssh-keygen -t rsa -C "korWIN@winwin.com"
 ```
 
 The public key (`id_rsa.pub`) should be sent to the owner of the repository to obtain work rights, or uploaded to profile settings in Bitbucket, GitHub, or GitLab.
