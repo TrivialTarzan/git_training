@@ -49,7 +49,8 @@ git commit -m "Describe the changes here"
   git gui &
   ```
 
-![Git Setup](GIT_gui.PNG)
+
+<img src="GIT_gui.png" alt="Git Setup" width="400">
 
 
 - To open a window showing all commits:
