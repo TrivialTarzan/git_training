@@ -1,69 +1,113 @@
-# git_training
+# Git Training
 
-Git setup highlights
+## Git Setup Highlights
 
-You can download git here: http://git-scm.com/downloads
-Install Git with default settings.
+You can download Git here: [Git SCM Downloads](http://git-scm.com/downloads) and install it with the default settings.
 
-Generating a pair of ssh keys:
-     ssh-keygen -t rsa –C “vitali_shulha@epam.com"
+### Generating a Pair of SSH Keys
 
-The public key (id_rsa) should be sent to the owner of the repository in order to obtain work rights. Or upload to profile settings in bitbucket / github / gitlab.
-Username and email settings:
+```sh
+ssh-keygen -t rsa -C "vitali_shulha@epam.com"
+```
 
-     git config --global user.name “Janusz Korwin-Mikke“
+The public key (`id_rsa.pub`) should be sent to the owner of the repository to obtain work rights, or uploaded to profile settings in Bitbucket, GitHub, or GitLab.
 
-     git config --global user.email “korWIN@winwin.com"
+### Username and Email Settings
 
-You can add changes with this command:
-     # write this if you want to add all the changed files to the commit
-     git add .
+```sh
+git config --global user.name "Janusz Korwin-Mikke"
+git config --global user.email "korWIN@winwin.com"
+```
 
-     # wite this to add anly specified file
-     git song.txt 
+## Adding Changes
 
-To commit write
-     git commit -m "Describe the changes here"
+### Staging Files
 
-To use the GIT GUI instead of terminal, write in GIT terminal:
-     git gui&
+- To add all changed files to the commit:
 
-To open a window where you'll see all the commits that were made:
-     gitk&
-     
-                    
-Rewerting the changes
+  ```sh
+  git add .
+  ```
 
-Git workflow:
+- To add a specific file:
 
-Working Directory:
+  ```sh
+  git add song.txt
+  ```
 
-git checkout -- file.txt
-This command discards changes you've made to file.txt in your working directory and reverts it to the version in the staging area (or the last commit if not staged). In the diagram, it visually represents moving changes out of the FILE SYSTEM.
+### Committing Changes
 
-git checkout . 
-This command discards all local changes in your working directory and reverts them to the state in the staging area (or last commit). It similarly moves changes out of the FILE SYSTEM.
+```sh
+git commit -m "Describe the changes here"
+```
 
-git clean -xdf
-This command removes untracked files and directories from your working directory (files that are not under Git's version control). It cleans up your working directory, removing elements not tracked in Git.
+## Git GUI Tools
 
+- To use the Git GUI instead of the terminal:
 
-Staging area (Index):
+  ```sh
+  git gui &
+  ```
 
-git reset file.txt 
-This command unstages file.txt. It removes file.txt from the staging area, but it does not discard changes you've made in your working directory to file.txt. 
+![Git Setup](GIT_gui.PNG)
 
 
-Local branch:
+- To open a window showing all commits:
 
-git reset HEAD^^ (HEAD~2) 
-This command moves the current branch's HEAD pointer (and branch pointer) back by two commits. HEAD^^ and HEAD~2 are equivalent ways to reference two commits before the current HEAD. This effectively rewrites the commit history locally by removing the last two commits from the branch. 
+  ```sh
+  gitk &
+  ```
 
-git commit --amend -m "commit message" 
-This command amends the last commit. It allows you to modify the previous commit's message or even stage changes and incorporate them into the last commit, effectively rewriting the last commit. This also changes the COMMIT history.
+![Git Setup](GITk&.PNG)
 
+## Reverting Changes
 
-Remote repository:
+### Working Directory
 
-git revert <sha1> 
-This command creates a new commit that reverts the changes introduced by the commit specified by <sha1>. It does not rewrite history but instead adds a new commit that undoes a previous one. The diagram suggests it affects the REMOTE REPOSITORY by creating an operation to undo changes from it.
+- Discard changes in a specific file:
+
+  ```sh
+  git checkout -- file.txt
+  ```
+
+- Discard all local changes:
+
+  ```sh
+  git checkout .
+  ```
+
+- Remove untracked files and directories:
+
+  ```sh
+  git clean -xdf
+  ```
+
+### Staging Area (Index)
+
+- Unstage a file:
+
+  ```sh
+  git reset file.txt
+  ```
+
+### Local Branch
+
+- Move HEAD back by two commits:
+
+  ```sh
+  git reset HEAD^^  # Equivalent to HEAD~2
+  ```
+
+- Amend the last commit:
+
+  ```sh
+  git commit --amend -m "Updated commit message"
+  ```
+
+## Remote Repository
+
+- Revert a specific commit by creating a new commit that undoes the changes:
+
+  ```sh
+  git revert <commit-hash>
+  
