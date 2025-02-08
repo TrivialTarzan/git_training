@@ -1,6 +1,6 @@
-# Git Training
+<h1 align="center">GIT training</h1>
 
-## Git Setup Highlights
+<p align="center"><img src="GIT_bash.PNG" alt="Logo" width="500" height="350"></p>
 
 You can download Git here: [Git SCM Downloads](http://git-scm.com/downloads) and install it with the default settings.
 
