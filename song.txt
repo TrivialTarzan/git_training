@@ -1,13 +1,5 @@
-
-Nawet na dynamit
-
-Żeby się wysadzić
-Żeby wreszcie zabić
-
-Nie ma żadnej mocy
-Z nikąd też pomocy
-
-Żeby się utopić
-Krzywdę sobie zrobić
+Initial text
++ text
 
 added a new line
+new line
