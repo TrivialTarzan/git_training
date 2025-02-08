@@ -49,8 +49,7 @@ git commit -m "Describe the changes here"
   git gui &
   ```
 
-
-<img src="GIT_gui.png" alt="Git Setup" width="400">
+<p align="center"><img src="GIT_gui.png" alt="Logo" width="600" height="400"></p>
 
 
 - To open a window showing all commits:
@@ -59,7 +58,7 @@ git commit -m "Describe the changes here"
   gitk &
   ```
 
-![Git Setup](GITk&.PNG)
+<p align="center"><img src="GITk&.PNG" alt="Logo" width="600" height="400"></p>
 
 ## Reverting Changes
 
