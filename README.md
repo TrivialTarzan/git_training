@@ -28,6 +28,7 @@ git config --global user.email "korWIN@winwin.com"
   ```sh
   git add .
   ```
+<p align="center"><img src="git_add.PNG" alt="Logo" width="500" height="350"></p>
 
 - To add a specific file:
 
