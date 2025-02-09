@@ -123,6 +123,9 @@ git commit -m "Describe the changes here"
   ```sh
   git revert <commit-hash>
 
+
+# .gitignore Guidelines
+
   ### .gitignore
 - Create a `.gitignore` file in the root directory.
 #### Ignoring Single Files
