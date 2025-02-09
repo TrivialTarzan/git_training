@@ -118,7 +118,7 @@ git commit -m "Describe the changes here"
 
 ## Remote Repository
 
-- Revert a specific commit by creating a new commit that undoes the changes:
+- Revert a specific commit (already commited to the remote repo) by creating a new commit that undoes the changes:
 
   ```sh
   git revert <commit-hash>
