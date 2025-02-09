@@ -126,10 +126,5 @@ git commit -m "Describe the changes here"
 
 # .gitignore Guidelines
 
-<p align="center"><img src="GIT_gui.PNG" alt="Logo" width="500" height="350"></p>
-#### Folders
-- Ignore entire directories:
-`examples/`
-#### Files Inside Folders
-- Apply the same rules to files inside folders:
-`examples/example.txt`
+<p align="center"><img src="ignore.PNG" alt="Logo" width="500" height="350"></p>
+
