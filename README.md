@@ -126,20 +126,7 @@ git commit -m "Describe the changes here"
 
 # .gitignore Guidelines
 
-  ### .gitignore
-- Create a `.gitignore` file in the root directory.
-#### Ignoring Single Files
-- Specify filename and extension:
-`example.txt`
-#### Keeping Single Files
-- Use an exclamation mark to keep a specific file:
-`!example.txt`
-#### Ignoring Multiple Files by Extension
-- Use a wildcard for file extensions:
-`*.txt`
-#### Ignoring Multiple Files by Name
-- Exclude files with the same name pattern:
-`example*`
+<p align="center"><img src="GIT_gui.PNG" alt="Logo" width="500" height="350"></p>
 #### Folders
 - Ignore entire directories:
 `examples/`
