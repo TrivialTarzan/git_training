@@ -1,1 +1,19 @@
 *.log
+
+# Ignore a specific file
+example.txt
+
+# Force Git to track this file even if it's ignored
+!example.txt
+
+# Ignore all files with a specific extension
+*.txt
+
+# Ignore all files starting with "example"
+example*
+
+# Ignore an entire folder and its contents
+examples/
+
+# Ignore a specific file inside a folder
+examples/example.txt
