@@ -122,4 +122,27 @@ git commit -m "Describe the changes here"
 
   ```sh
   git revert <commit-hash>
-  
+
+
+# .gitignore Guidelines
+
+  ### .gitignore
+- Create a `.gitignore` file in the root directory.
+#### Ignoring Single Files
+- Specify filename and extension:
+`example.txt`
+#### Keeping Single Files
+- Use an exclamation mark to keep a specific file:
+`!example.txt`
+#### Ignoring Multiple Files by Extension
+- Use a wildcard for file extensions:
+`*.txt`
+#### Ignoring Multiple Files by Name
+- Exclude files with the same name pattern:
+`example*`
+#### Folders
+- Ignore entire directories:
+`examples/`
+#### Files Inside Folders
+- Apply the same rules to files inside folders:
+`examples/example.txt`
