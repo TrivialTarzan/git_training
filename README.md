@@ -94,13 +94,13 @@ git commit -m "Describe the changes here"
   git reset --soft HEAD~1
   ```
 
-<p align="center"><img src="reset_soft.PNG" alt="Logo" width="500" height="350"></p>
+<p align="center"><img src="reset_soft.PNG" alt="Logo" width="380" height="290"></p>
 
   ```sh
   git reset --mixed HEAD^
   ```
 
-<p align="center"><img src="reset_mixed.PNG" alt="Logo" width="500" height="350"></p>
+<p align="center"><img src="reset_mixed.PNG" alt="Logo" width="380" height="290"></p>
 
 ### Local Branch
 
