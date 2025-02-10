@@ -123,6 +123,41 @@ git commit -m "Describe the changes here"
 
   ```sh
   git revert <commit-hash>
+  ```
+
+  
+### Branch and Merge 
+
+#### Listing Branches
+To see all the branches in your repository
+```sh
+git branch
+```
+The branch you're currently on will be marked with (`*`).
+
+#### Creating a New Branch
+To create a new branch at your current commit
+```sh
+git branch [branch-name]
+```
+
+#### Switching Branches
+To change to another branch and update your working directory
+```sh
+git checkout [branch-name]
+```
+
+#### Merging Branches
+To merge the changes from a specified branch into your current branch
+```sh
+git merge [branch]
+```
+
+#### Viewing Commit History
+To display the complete commit history of the current branch
+```sh
+git log
+```
 
 
 # .gitignore Guidelines
