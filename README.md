@@ -148,12 +148,14 @@ To change to another branch and update your working directory
 ```sh
 git checkout [branch-name]
 ```
+<p align="center"><img src="git_checkout.PNG" alt="Logo" width="500" height="350"></p>
 
 #### Merging Branches
 To merge the changes from a specified branch into your current branch
 ```sh
 git merge [branch]
 ```
+<p align="center"><img src="git_merge.PNG" alt="Logo" width="500" height="350"></p>
 
 #### Viewing Commit History
 To display the complete commit history of the current branch
