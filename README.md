@@ -157,8 +157,8 @@ git merge [branch]
 ```
 <p align="center"><img src="git_merge.PNG" alt="Logo" width="500" height="350"></p>
 
-To rebase your current branch onto another branch, run
-IT SHOULD ONLY BE USED WHEN WORKING ON A SMALL BRANCH
+Rebase your current branch onto another branch
+- IT SHOULD ONLY BE USED WHEN WORKING ON A SMALL BRANCH
 ```sh
 git rebase [base-branch]
 ```
