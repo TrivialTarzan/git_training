@@ -117,7 +117,7 @@ git commit -m "Describe the changes here"
   git commit --amend -m "Updated commit message"
   ```
 
-## Remote Repository
+### Remote Repository
 
 - Revert a specific commit (already commited to the remote repo) by creating a new commit that undoes the changes:
 
@@ -126,7 +126,8 @@ git commit -m "Describe the changes here"
   ```
 
   
-### Branch and Merge 
+## Branch and Merge 
+
 
 #### Listing Branches
 To see all the branches in your repository
@@ -160,7 +161,7 @@ git log
 ```
 
 
-# .gitignore Guidelines
+## .gitignore Guidelines
 
 <p align="center"><img src="ignore.PNG" alt="Logo" width="500" height="350"></p>
 
