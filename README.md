@@ -138,9 +138,9 @@ git branch
 The branch you're currently on will be marked with (`*`).
 
 #### Creating a New Branch
-To create a new branch at your current commit
+To create a new branch and switch to it at the same time, you can run the git checkout command with the -b switch
 ```sh
-git branch [branch-name]
+git checkout -b [branch-name]
 ```
 
 #### Switching Branches
