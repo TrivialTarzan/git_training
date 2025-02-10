@@ -157,6 +157,13 @@ git merge [branch]
 ```
 <p align="center"><img src="git_merge.PNG" alt="Logo" width="500" height="350"></p>
 
+To rebase your current branch onto another branch, run
+IT SHOULD ONLY BE USED WHEN WORKING ON A SMALL BRANCH
+```sh
+git rebase [base-branch]
+```
+This command will move the base of your current branch to the tip of the specified base branch.
+
 #### Viewing Commit History
 To display the complete commit history of the current branch
 ```sh
