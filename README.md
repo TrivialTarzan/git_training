@@ -170,10 +170,34 @@ To display the complete commit history of the current branch
 git log
 ```
 
-
-
-
 ## .gitignore Guidelines
 
 <p align="center"><img src="ignore.PNG" alt="Logo" width="500" height="350"></p>
 
+#### Cherry-picking
+
+- Find the Commit You Want to Pick
+(Use git log or git reflog to find the commit hash you want to cherry-pick)
+```sh
+git log --oneline
+```
+
+- Example output:
+```sh
+a1b2c3d Fixed this sexy bug
+e4f5g6h Add new feature
+i7j8k9l Update README
+```
+
+- Copy the commit hash (e.g., a1b2c3d)
+
+- Switch to the Target Branch
+(before applying the commit, switch to the branch where you want to apply the commit)
+```sh
+git checkout target-branch
+```
+
+ Apply the Commit Using Cherry-Pick
+```sh
+git cherry-pick a1b2c3d
+```
