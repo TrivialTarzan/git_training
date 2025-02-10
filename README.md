@@ -125,7 +125,8 @@ git commit -m "Describe the changes here"
   git revert <commit-hash>
   ```
 
-  
+
+
 ## Branch and Merge 
 
 
@@ -159,6 +160,8 @@ To display the complete commit history of the current branch
 ```sh
 git log
 ```
+
+
 
 
 ## .gitignore Guidelines
