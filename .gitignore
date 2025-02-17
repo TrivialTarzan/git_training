@@ -1,13 +1,17 @@
 *.log
 
+.db
+
+target
+
+bin
+
 # Ignore a specific file
 example.txt
 
 # Force Git to track this file even if it's ignored
 !example.txt
 
-# Ignore all files with a specific extension
-*.txt
 
 # Ignore all files starting with "example"
 example*
